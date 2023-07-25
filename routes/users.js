@@ -10,5 +10,12 @@ router.get('/cool', function(req, res, next) {
   res.render('index', { title: 'you are so cool' });
 });
 
+router.get('/cool/beach', function(req, res, next) {
+  res.send('adoro praia' );
+});
+
+router.get('/ifc', function(req, res, next) {
+  res.render('index', { title: 'bem vindo ao IFC' });
+});
 
 module.exports = router;
