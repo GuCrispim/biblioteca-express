@@ -1,6 +1,6 @@
-const mongoose = require ("mongose");
+const mongoose = require ("mongoose");
 
-const Schema = mongose.Schema;
+const Schema = mongoose.Schema;
 
 const GenreSchema = new Schema({
     name: {type: String, require:true, minLength: 3, maxLength: 100}
